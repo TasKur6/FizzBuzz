@@ -10,8 +10,7 @@ fun main() {
     }
 }
 
-fun calculateFizzBuzz(input: Int): String {
-    var number = input
+fun calculateFizzBuzz(number: Int): String {
     val brokenUpString = mutableListOf<String>()
 
     if (number % 11 == 0) {
@@ -19,7 +18,6 @@ fun calculateFizzBuzz(input: Int): String {
             brokenUpString.add("Fezz")
         }
         brokenUpString.add("Bong")
-        number += 1
         return convertToString(brokenUpString)
     }
     if (number % 3 == 0) {
